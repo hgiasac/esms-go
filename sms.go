@@ -35,6 +35,7 @@ type SendMultipleMessageResponse struct {
 	CodeResult      StatusCode `json:"CodeResult"`
 	CountRegenerate int        `json:"CountRegenerate"`
 	SmsID           string     `json:"SMSID"`
+	ErrorMessage    string     `json:"ErrorMessage,omitempty"`
 }
 
 type smsService struct {
